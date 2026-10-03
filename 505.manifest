@@ -1,0 +1,20 @@
+CACHE MANIFEST
+# result-lock-icons-20261003-v2
+
+CACHE:
+result-ui.js
+results/success.png
+results/failure.png 
+
+style.css
+playstation-logo.png
+fonts/JosefinSans-Regular.ttf
+fonts/JosefinSans-Medium.ttf
+fonts/JosefinSans-SemiBold.ttf
+fonts/JosefinSans-Bold.ttf
+goldhen_2.4b18.12.bin
+index.html
+505\exploit.js
+
+NETWORK: 
+*
