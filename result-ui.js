@@ -35,7 +35,7 @@
             overlay.className = 'result-' + kind;
             lastKind = kind;
         }
-        caption.textContent = text;
+        caption.textContent = kind === 'success' ? 'GoldHEN Loaded Successfully' : text;
         overlay.style.display = 'flex';
     }
     new MutationObserver(update).observe(status, {childList: true, characterData: true, subtree: true});
