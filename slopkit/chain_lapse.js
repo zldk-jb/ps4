@@ -36,7 +36,7 @@ const lines = [];
 function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "<span class=\"gold\">GoldHEN</span> v2.4b18.12 Loaded";
+        m.innerHTML = "GoldHEN v2.4b18.12 Loaded ...";
     }
 }
 
@@ -676,7 +676,7 @@ function makeRpc(worker) {
                 mark("ALREADY-ROOT", "getuid=" + uid0 + " setuid(0)=" + su0);
                 var m = document.getElementById("msgs");
                 if (m) {
-                    m.innerHTML = "<span class=\"gold\">GoldHEN</span> is Already Loaded ...";
+                    m.innerHTML = "GoldHEN is Already Loaded ...";
                 }
                 return;
             }
