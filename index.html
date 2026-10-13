@@ -121,10 +121,10 @@ if (!isPS4) {
 </script>
 <main class="dashboard">
 <section class="hero-copy"><h1 class="gold console-title">Jailbreak Your Console<br><span>Play Beyond Limits</span></h1><div class="firmware-pill">Firmware <strong id="detectedFirmware">Detecting...</strong></div></section><section class="launch-zone" aria-label="Jailbreak launcher"><div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><button id="startJailbreakBtn" class="logo-start-btn" type="button" onclick="startJailbreak()" aria-label="Start Jailbreak" disabled><img src="playstation-logo.png" alt="PlayStation" width="300" height="200"><span class="button-label">START</span></button></section>
-<section class="status-card"><div class="status-content"><div class="status-head"><span class="ready-state"><span class="ready-dot"></span><span id="stateLabel">Ready</span></span></div><p id="msgs" class="g2all-msg" role="status" aria-live="polite">Ready — Click the PlayStation logo</p></div></section>
+<section class="status-card"><div class="status-content"><p id="msgs" class="g2all-msg" role="status" aria-live="polite">Ready — Click the PlayStation logo</p></div></section>
 </main><footer class="bottom-bar"><span class="symbols" aria-hidden="true">△ &nbsp; ○ &nbsp; × &nbsp; □</span></footer>
 <script src="result-ui.js"></script><script>
-(function(){var msg=document.getElementById('msgs'),label=document.getElementById('stateLabel');function sync(){var text=msg.textContent||'',kind='ready';if(/Only for PS4/i.test(text))kind='preview';else if(/unsupported|error|failed|failure|not found/i.test(text))kind='error';else if(/success|loaded/i.test(text))kind='success';else if(/loading|wait/i.test(text))kind='loading';document.body.setAttribute('data-state',kind);label.textContent={ready:'Ready',preview:'Preview',error:'Attention',success:'Complete',loading:'Working'}[kind];}new MutationObserver(sync).observe(msg,{childList:true,subtree:true,characterData:true});sync();}());
+(function(){var msg=document.getElementById('msgs'),label=document.getElementById('stateLabel');function sync(){var text=msg.textContent||'',kind='ready';if(/Only for PS4/i.test(text))kind='preview';else if(/unsupported|error|failed|failure|not found/i.test(text))kind='error';else if(/success|loaded/i.test(text))kind='success';else if(/loading|wait/i.test(text))kind='loading';document.body.setAttribute('data-state',kind);}new MutationObserver(sync).observe(msg,{childList:true,subtree:true,characterData:true});sync();}());
 </script>
 </body>
 </html>
