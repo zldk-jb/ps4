@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1530">
-<title>PS4 Jailbreak FW 7.00-13.52</title>
+<meta name="theme-color" content="#080e2c">
+<title>ZoLDiK — Offline Cache</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="cache-page">
@@ -17,17 +17,6 @@ window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
 </script>
-<main class="cache-wrap">
-  <div class="status-card">
-    <div class="status-head">
-      <div class="ready-state"><span class="ready-dot"></span><span>Ready</span></div>
-      <div class="meta">OFFLINE CACHE</div>
-    </div>
-    <h1 id="msgs" class="cache-msg">Starting Cache Installation...</h1>
-    <p class="cache-hint">Keep this page open until installation is complete.</p>
-  </div>
-  <footer class="g2all-footer">ZoLDiK
-  </footer>
-</main>
+<main class="cache-wrap"><h1 class="cache-title">Offline Cache</h1><div class="cache-track" aria-hidden="true"><span></span></div><div class="status-card"><div class="status-icon" aria-hidden="true">↓</div><div class="status-content"><div class="status-head"><span class="spec-label">OFFLINE CACHE</span></div><h2 id="msgs" class="cache-msg" role="status" aria-live="polite">Starting Cache Installation...</h2><p class="cache-hint">Keep this page open until installation is complete.</p></div></div></main><footer class="bottom-bar"><span class="symbols" aria-hidden="true">△ &nbsp; ○ &nbsp; × &nbsp; □</span></footer>
 </body>
 </html>
